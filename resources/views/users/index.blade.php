@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 
-   <h1 class="my-3 text-success text-center">Welcome to Lara Blog</h1>
+   <h1 class="my-3 text-success text-center">Welcome to Laravel Blog</h1>
 
    {{-- User details --}}
    @foreach ($users as $user)
