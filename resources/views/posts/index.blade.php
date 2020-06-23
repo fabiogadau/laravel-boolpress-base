@@ -12,9 +12,20 @@
       <p>{{ $post->body }}</p>
    </article>
 
-      @if (!$loop->last)
-      <hr>
-      @endif
+   @if (!$loop->last)
+   <hr>
+   @endif
+
+   <h3>Comments</h3>
+   @forelse ($post->comments as $comment)
+   <h4><strong>"{{ $comment->title }}"</strong> by {{ $comment->name }}</h4>
+   <p>{{ $comment->body }}</p>
+   @if (!$loop->last)
+   <hr>
+   @endif
+   @empty
+   <p>No comments yet.</p>
+   @endforelse
    @endforeach
 
    <h4>Navigation</h4>

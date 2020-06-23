@@ -9,6 +9,7 @@ class Comment extends Model
     // Mass assign
     protected $fillable = [
         'post_id',
+        'name',
         'title',
         'body'
     ];

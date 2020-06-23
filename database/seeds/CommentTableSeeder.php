@@ -21,6 +21,7 @@ class CommentTableSeeder extends Seeder
             $newComment = new Comment();
 
             $newComment->post_id = $posts->random()->id;
+            $newComment->name = $faker->name('male'|'female');
             $newComment->title = $faker->words(5, true);
             $newComment->body = $faker->text(200);
 

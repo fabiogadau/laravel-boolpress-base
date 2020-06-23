@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index()
     {
         // Paginate
-        $posts = Post::paginate(5);
+        $posts = Post::simplePaginate(1);
 
         return view('posts.index', compact('posts'));
     }
