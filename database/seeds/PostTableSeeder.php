@@ -22,7 +22,7 @@ class PostTableSeeder extends Seeder
 
             $newPost->user_id = $users->random()->id;
             $newPost->title = $faker->text(50);
-            $newPost->body = $faker->text(300);
+            $newPost->body = $faker->text(3000);
 
             $newPost->save();
         }

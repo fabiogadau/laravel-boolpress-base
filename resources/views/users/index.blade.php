@@ -1,22 +1,21 @@
 @extends('layouts.main')
 @section('content')
 
-   <h1>Welcome to Lara Blog</h1>
+   <h1 class="my-3 text-success text-center">Welcome to Lara Blog</h1>
 
    {{-- User details --}}
    @foreach ($users as $user)
-   <div class="user">
+   <div class="user p-3 rounded bg-primary text-light">
       <h2>{{ $user->name }}</h2>
-      <h4>{{ $user->email }}</h4>
       <img src="{{ $user->info['avatar'] }}" alt="{{ $user->name }}">
-      <h4>{{ $user->info['phone'] }}</h4>
+      <h5>Email address: {{ $user->email }}</h5>
+      <h5>Phone number: {{ $user->info['phone'] }}</h5>
 
       {{-- User posts --}}
-      {{--@dump($user->posts)--}}
-      <h3>Posts</h3>
-      <ul>
+      <h3 class="mt-5 text-center">Posts</h3>
+      <ul class="list-group text-dark">
          @foreach ($user->posts as $post)
-            <li>
+            <li class="list-group-item">
                <h4>
                   {{  $post->title }}
                </h4>
