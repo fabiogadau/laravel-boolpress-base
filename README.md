@@ -5,3 +5,13 @@
    <li>Usate il model User già preparato da Laravel e create l’entità info_users per la relazione one-to-one (con users) e l’entità posts per la relazione one-to-many (con users)</li>
    <li>Gestite migrations, seeders, routes, controllers e views</li>
 </ul>
+
+<hr>
+
+<h2>Esercizio di oggi: <strong>Laraval Boolpress (laravel relationship 1 continuazione)<strong></h2>
+<h3>Descrizione</h3>
+<ul>
+   <li>Terminare per chi non avesse finito l’esercizio di ieri oppure per chi dovesse fare refactoring</li>
+   <li>Aggiungere  entità al blog e metterle in relazione o one-to-one o one-to-many (ad esempio un entità ‘commenti’ da relazionare al post del blog )</li>
+   <li>Gestire migrations, seeders, models, routes (ricordate php artisan route:list per aiutarvi con le path), controllers e views come fatto stamattina nel live in lezione</li>
+</ul>
