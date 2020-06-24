@@ -15,9 +15,18 @@
             <a class="nav-brand nav-link mr-auto text-primary" href="{{ route('home') }}"><h2>Laravel Blog</h2></a>
 
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('users.index') }}">Users</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('posts.index') }}">Blog archive</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('users.index') }}">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('posts.index') }}">Blog archive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('posts.create') }}">Create new Post</a>
+                </li>
             </ul>
         </nav>
     </header>

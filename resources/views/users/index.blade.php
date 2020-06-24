@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @section('content')
 
+   {{-- User index title --}}
    <h1 class="my-3 text-success text-center">Welcome to Laravel Blog</h1>
 
    {{-- User details --}}
